@@ -1,0 +1,19 @@
+--- onestroke-0.8.3/Makefile.org	2006-09-04 21:19:58.000000000 +0000
++++ onestroke-0.8.3/Makefile	2007-08-28 01:04:56.000000000 +0000
+@@ -25,11 +25,11 @@
+ new: clean all
+ 
+ install: onestroke
+-	mkdir -p ${PREFIX}/bin ${PREFIX}/share/applications ${PREFIX}/share/pixmaps ${PREFIX}/share/onestroke-0.8
+-	install -m 755 onestroke ${PREFIX}/bin/
+-	install onestroke.desktop ${PREFIX}/share/applications/
+-	install onestroke.png ${PREFIX}/share/pixmaps/
+-	install profiles/* ${PROFDIR}/
++	mkdir -p ${DESTDIR}${PREFIX}/bin ${DESTDIR}${PREFIX}/share/applications ${DESTDIR}${PREFIX}/share/pixmaps ${DESTDIR}${PREFIX}/share/onestroke-0.8
++	install -m 755 onestroke ${DESTDIR}${PREFIX}/bin/
++	install onestroke.desktop ${DESTDIR}${PREFIX}/share/applications/
++	install onestroke.png ${DESTDIR}${PREFIX}/share/pixmaps/
++	install profiles/* ${DESTDIR}${PROFDIR}/
+ 
+ uninstall: onestroke
+ 	rm -f ${PREFIX}/bin/onestroke ${PREFIX}/share/applications/onestroke.desktop ${PREFIX}/share/pixmaps/onestroke.png
