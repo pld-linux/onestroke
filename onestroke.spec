@@ -1,4 +1,6 @@
+# TODO: optflags
 Summary:	OneStroke - Freehand gesture based character input system for Tablet PCs
+Summary(pl.UTF-8):	OneStroke - system wprowadzania znaków dla Tablet PC oparty na gestach
 Name:		onestroke
 Version:	0.8.3
 Release:	0.1
@@ -13,10 +15,16 @@ BuildRequires:	xorg-lib-libXtst-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-OneStroke is a gesture-based character input program. Because
-a tablet PC in tablet mode does not have a keyboard, a software
-replacement is necessary. OneStroke aims to be a more elegant
-replacement to the bulky on-screen keyboard.
+OneStroke is a gesture-based character input program. Because a Tablet
+PC in tablet mode does not have a keyboard, a software replacement is
+necessary. OneStroke aims to be a more elegant replacement to the
+bulky on-screen keyboard.
+
+%description -l pl.UTF-8
+OneStroke to program do wprowadzania znaków poprzez gesty. Ponieważ
+Tablet PC w trybie tabletu nie ma klawiatury, potrzebny jest jej
+programowy zamiennik. OneStroke ma być bardziej eleganckim
+zamiennikiem niż zwykła klawiatura na ekranie.
 
 %prep
 %setup -q
