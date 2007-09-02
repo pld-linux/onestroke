@@ -11,6 +11,7 @@ Source0:	http://www.paperaffinity.com/risujin/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://www.paperaffinity.com/risujin/onestroke.php
 BuildRequires:	gtk+2-devel >= 2:2.4
+BuildRequires:	pkgconfig
 BuildRequires:	xorg-lib-libXtst-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
